@@ -1,4 +1,4 @@
-package com.example.jin.testtest;
+﻿package com.example.jin.testtest;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -237,7 +237,10 @@ public class MainActivity extends AppCompatActivity {
             Calendar calendar = Calendar.getInstance();
             //알람시간 calendar에 set해주기
 
-            calendar.set(calendar.get(Calendar.YEAR)+0, calendar.get(Calendar.MONTH)+0, calendar.get(Calendar.DATE)+0, 10, 48, 0);
+            
+            calendar.set(calendar.get(Calendar.YEAR)+0, calendar.get(Calendar.MONTH)+0, calendar.get(Calendar.DATE)+0, 8, 0, 0);
+            calendar.set(calendar.get(Calendar.YEAR)+0, calendar.get(Calendar.MONTH)+0, calendar.get(Calendar.DATE)+0, 12, 30, 0);
+            calendar.set(calendar.get(Calendar.YEAR)+0, calendar.get(Calendar.MONTH)+0, calendar.get(Calendar.DATE)+0, 18, 0, 0);
             Log.e("날짜 : ", String.valueOf(calendar.get(Calendar.DATE)+0));
             //알람 예약
             am.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), sender);
